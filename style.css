@@ -1,6 +1,6 @@
 body {
   background: black;
-  color: cyan;
+  color: rgb(0, 174, 255);
   padding: 10px;
   font-family: Arial, sans-serif;
 }
@@ -17,6 +17,7 @@ nav {
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
+  border: 3px solid lightblue;
 }
 
 h1 {
@@ -46,7 +47,7 @@ a {
 
 /* main container area beneath menu */
 main {
-  background: rgb(245, 238, 219);
+  background: rgb(241, 255, 44);
   display: flex;
   margin-top: 20px;
 }
@@ -54,6 +55,7 @@ main {
 .sidebar {
   margin-right: 25px;
   padding: 10px;
+  border: 3px solid lightblue;
 }
 
 .sidebar-img {
@@ -63,11 +65,12 @@ main {
 .content {
   flex: 1;
   padding: 15px;
+  border: 3px solid lightblue;
 }
 
 /* interests section styles */
 #interests {
-  border: 4px silver ridge;
+  border: 3px solid lightblue;
   padding: 8px;
   margin-top: 20px;
 }
