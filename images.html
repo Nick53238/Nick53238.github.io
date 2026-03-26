@@ -1,35 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallary</title>
     <style>
-        body {
-            background: black;
-            padding: 20px;
-        }
-        .back-button {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            background: #29a0ef;
-            color: rgb(251, 255, 0);
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .back-button:hover {
-            background: #40a3ff;
-        }
+      body {
+        background: black;
+        padding: 20px;
+      }
+      .back-button {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background: #29a0ef;
+        color: rgb(251, 255, 0);
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .back-button:hover {
+        background: #40a3ff;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .gallery img {
+        width: 300px;
+        height: auto;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        object-fit: contain;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a href="index.html" class="back-button">← Back to Home</a>
-    <img id="ruleofthirds" src=".github/Asets/IMG_5019.PNG" alt="Image 1" style="max-width: 100%; margin: 10px; border: 2px solid lightblue;">
-    <img id="ruleofthirds" src=".github/Asets/IMG_5018.PNG" alt="Image 2" style="max-width: 100%; margin: 10px; border: 2px solid lightblue;">
-    <img id="ruleofthirds" src=".github/Asets/IMG_5016.PNG" alt="Image 3" style="max-width: 100%; margin: 10px; border: 2px solid lightblue;">
-    <img id="ruleofthirds" src=".github/Asets/IMG_5015.PNG" alt="Image 4" style="max-width: 100%; margin: 10px; border: 2px solid lightblue;">
-    <img id="ruleofthirds" src=".github/Asets/IMG_5013.PNG" alt="Image 5" style="max-width: 100%; margin: 10px; border: 2px solid lightblue;">
-
-</body>
+    <div class="gallery">
+      <img id="ruleofthirds" src=".github/Asets/IMG_5019.PNG" alt="Image 1" />
+      <img id="ruleofthirds" src=".github/Asets/IMG_5018.PNG" alt="Image 2" />
+      <img id="ruleofthirds" src=".github/Asets/IMG_5016.PNG" alt="Image 3" />
+      <img id="ruleofthirds" src=".github/Asets/IMG_5015.PNG" alt="Image 4" />
+      <img id="ruleofthirds" src=".github/Asets/IMG_5013.PNG" alt="Image 5" />
+    </div>
+  </body>
 </html>
